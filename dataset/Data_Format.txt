@@ -1,0 +1,14 @@
+=================================================================
+Temporal Video Segmentation Datasets train/test file format:
+=================================================================
+	TVS Task:
+		(1) tips.tvs.train:	url \t stepid \t start_second \t end_second
+		(2) tips.tvs.test:	url \t stepid \t start_second \t end_second 
+	
+=================================================================
+Temporal Video Segmentation prediction file format:
+=================================================================
+
+	TVS Task:
+		TVS/.prediction:	url \t stepid \t predict_start_second \t predict_end_second 
+		(predict_start_second, predict_end_second should be integer)
