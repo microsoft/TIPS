@@ -339,8 +339,8 @@ predit_dir=args.prediction_dir
 
 for root,dirs,files in os.walk(predit_dir):   
     for file in files:
-        if(file.endswith('.tsv')):
+        if(file.endswith('.prediction')):
             path=predit_dir + "\\" + file
-            eiou_details_file=predit_dir + "\\" + file[:-4]+".eiou.details.txt"
-            eiou_final_file=predit_dir + "\\" + file[:-4]+".eiou.final.txt"
+            eiou_details_file=predit_dir + "\\" + file[:-11]+".eiou.details.txt"
+            eiou_final_file=predit_dir + "\\" + file[:-11]+".eiou.final.txt"
             run_by_file(args.ground_truth_file, path, eiou_details_file,eiou_final_file)
