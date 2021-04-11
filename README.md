@@ -2,8 +2,7 @@
 [**Tasks**](#tasks) |
 [**Dataset**](#get-dataset) |
 [**Evaluation**](#Evaluation) |
-[**Baseline**](#get-Baseline) |
-[**Paper**](https://arxiv.org/abs/2004.01401)
+[**Baseline**](#get-Baseline) 
 
 ## Introduction
 This repository contains information about the Video Procedure Segmentation evaluation benchmark TIPS.
