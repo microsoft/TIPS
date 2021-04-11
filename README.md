@@ -1,28 +1,17 @@
-# XGLUE: 
-[**Tasks**](#tasks-and-languages) |
+# TIPS: 
+[**Tasks**](#tasks) |
 [**Dataset**](#get-dataset) |
-[**Leaderboard**](https://microsoft.github.io/XGLUE/) |
-[**Baseline**](https://github.com/microsoft/Unicoder) |
+[**Evaluation**](#Evaluation) |
+[**Baseline**](#get-Baseline) |
 [**Paper**](https://arxiv.org/abs/2004.01401)
 
 ## Introduction
-This repository contains information about the cross-lingual evaluation benchmark XGLUE, which is composed of 11 tasks spans 19 languages.
-For each task, the training data is only available in English. This means that to succeed at XGLUE, a model must have a strong zero-shot cross-lingual transfer capability to learn from the English data of a specific task and transfer what it learned to other languages. 
-Comparing to its concurrent work XTREME, XGLUE has two characteristics: First, it includes cross-lingual NLU and cross-lingual NLG tasks at the same time; 
-Second, besides including 5 existing cross-lingual tasks (i.e. NER, POS, MLQA, PAWS-X and XNLI), XGLUE selects 6 new tasks from Bing scenarios as well, 
-including News Classification (NC), Query-Ad Matching (QADSM), Web Page Ranking (WPR), QA Matching (QAM), Question Generation (QG) and News Title Generation (NTG). 
-Such diversities of languages, tasks and task origin provide a comprehensive benchmark for quantifying the quality of a pre-trained model on cross-lingual natural language understanding and generation. 
+This repository contains information about the Video Procedure Segmentation evaluation benchmark TIPS.
 
-The 11 tasks in XGLUE:
+TIPS contains 63k videos and more than 300k procedure segments and 8000 hours from instructional videos on Youtube, which covers plenty of how-to areas such as cooking, health, beauty, parenting, gardening, etc. Comparing to other temporal video segmentation datasets, TIPS has 4 characteristics: (1) Scale. TIPS is the largest temporal video segmentation dataset, and more specifically, the largest video procedure segmentation dataset. (2) Diversity. TIPS contains open-domain instructional videos on Youtube including cooking, health, beauty, parenting, gardening, etc. (3)Continuity. Note that the segments in TIPS are continuous, while the segments in Youcook2 are incontinuous. The continuous segmentation can easily overview the procedure of the whole video structure globally. (4) Auto-generated. We introduce a workflow to auto-generate the TIPS dataset from Youtube with guratee of high quality. With the increase of videos uploaded to Youtube, it is feasible to collect more data automatically in the future. 
 
-![](./xglue_overview1.png)
-
-The 19 languages in XGLUE, including Arabic (ar), Bulgarian (bg), German (de), Greek (el), English (en), Spanish (es), French (fr), Hindi (hi), Italian (it), Dutch (nl), Polish (pl), Portuguese (pt), Russian (ru), Swahili (sw), Thai (th), Turkish (tr), Urdu (ur), Vietnamese (vi) and Chinese (zh):
-
-![](./xglue_overview2.png)
-
-## Tasks and Languages
-The task in TIPS c
+## Tasks
+TIPS targets on Video Procedure Segmentation Task (VPS).
 
 ## Get Dataset
 In order to use our dataset, please navigate to [TIPS Leaderboard](https://microsoft.github.io/TIPS/) and agree to our terms of service. After you do so a download link will be made available.
@@ -31,30 +20,16 @@ In order to use our dataset, please navigate to [TIPS Leaderboard](https://micro
 We put the baseline system to [MT-GBD](https://github.com/microsoft/mt_gbd) repo. It contains a baseline model that are trained based on TIPS.
 
 ## Leaderboard Submission
-### Submissions
-To submit your predictions for evaluation, please create a single folder which contains the 11 sub-folders named after each task (see [reference file](evaluation/Unicoder_prediction_on_XGLUE_test) for an example). 
-Inside each folder, create one prediction file for each language and name the file using the following format: `{language}.prediction` where `{language}` is the 2 character [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code.
-Please validate that you have done this correctly by evaluating against the development file. Once that is done <a href='xglue@microsoft.com'>email your submission</a>. We will reply with your model performance.
 
-### Evaluation
-To evaluate your model's performance, we will compare your prediction files with the ground truth files.
+## Evaluation
+To evaluate your model's performance, we will compare your prediction files with the ground truth file.
 We are keeping our evaluation data held out, to evaluate your performance, please use the following command: 
 
 ```
 python EIoU_Evaluation.py --prediction_dir <prediction_files_folder> --ground_truth_file <ground_truth_file>
 ```
 
-This file has several dependencies:
-
-```
-argparse
-```
-
 The detailed format of each task is at [Evaluation ReadMe](./evaluation/README.md).
-### Baseline
-To aid your model comparison we have included the output of our baseline system, unicoder.  Please find the [dev example](evaluation/Unicoder_prediction_on_XGLUE_dev) and [test example](evaluation/Unicoder_prediction_on_XGLUE_test).
-## Paper
-If you use our benchmark or dataset, please cite our paper `\cite{Liang2020XGLUEAN}`.
 
 # Contributing
 
