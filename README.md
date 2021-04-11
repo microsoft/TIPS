@@ -13,7 +13,7 @@ TIPS contains 63k videos and more than 300k procedure segments and 8000 hours fr
 TIPS targets on Video Procedure Segmentation Task (VPS).
 
 ## Get Dataset
-In order to use our dataset, please navigate to [TIPS Leaderboard](https://microsoft.github.io/TIPS/) and agree to our terms of service. After you do so a download link will be made available.
+In order to use our dataset, please navigate to [TIPS Dataset](./dataset).
 
 ## Get Baseline
 We put the baseline system to [MT-GBD](https://github.com/microsoft/mt_gbd) repo. It contains a baseline model that are trained based on TIPS.
