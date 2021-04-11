@@ -28,8 +28,6 @@ We are keeping our evaluation data held out, to evaluate your performance, pleas
 python EIoU_Evaluation.py --prediction_dir <prediction_files_folder> --ground_truth_file <ground_truth_file>
 ```
 
-The detailed format of each task is at [Evaluation ReadMe](./evaluation/README.md).
-
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
