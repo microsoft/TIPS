@@ -15,9 +15,6 @@ TIPS targets on Video Procedure Segmentation Task (VPS).
 ## Get Dataset
 In order to use our dataset, please navigate to [TIPS Dataset](./dataset).
 
-## Get Baseline
-We put the baseline system to [MT-GBD](https://github.com/microsoft/mt_gbd) repo. It contains a baseline model that are trained based on TIPS.
-
 ## Leaderboard Submission
 
 ## Evaluation
