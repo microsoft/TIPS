@@ -14,8 +14,6 @@ TIPS targets on Video Procedure Segmentation Task (VPS).
 ## Get Dataset
 In order to use our dataset, please navigate to [TIPS Dataset](./dataset).
 
-## Leaderboard Submission
-
 ## Evaluation
 To evaluate your model's performance, we will compare your prediction files with the ground truth file.
 We are keeping our evaluation data held out, to evaluate your performance, please use the following command: 
@@ -26,4 +24,4 @@ python EIoU_Evaluation.py --prediction_dir <prediction_files_folder> --ground_tr
 The detailed format of each task is at [Evaluation ReadMe](./evaluation/README.md).
 
 # License and Legal Notice
-We release the TIPS dataset (under https://github.com/microsoft/TIPS ) under the following [Computational Use of Data Agreement](https://github.com/microsoft/Open-Use-of-Data-Agreement) (LICENSE). By downloading this dataset and the contents, you are automatically agreeing to accept the use terms.
+We release the TIPS dataset (under https://github.com/microsoft/TIPS ) under the following [Open Use of Data Agreement(O-UDA)](https://github.com/microsoft/Open-Use-of-Data-Agreement) (LICENSE). By downloading this dataset and the contents, you are automatically agreeing to accept the use terms.
