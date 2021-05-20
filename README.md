@@ -24,4 +24,4 @@ python EIoU_Evaluation.py --prediction_dir <prediction_files_folder> --ground_tr
 The detailed format of each task is at [Evaluation ReadMe](./evaluation/README.md).
 
 # License and Legal Notice
-We release the TIPS dataset (under https://github.com/microsoft/TIPS ) under the following [Open Use of Data Agreement(O-UDA)](https://github.com/microsoft/Open-Use-of-Data-Agreement) (LICENSE). By downloading this dataset and the contents, you are automatically agreeing to accept the use terms.
+We release the TIPS dataset (under https://github.com/microsoft/TIPS ) under the following Open Use of Data Agreement ([LICENSE](https://github.com/microsoft/Open-Use-of-Data-Agreement)). By downloading this dataset and the contents, you are automatically agreeing to accept the use terms.
